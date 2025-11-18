@@ -43,7 +43,10 @@ tips.forEach(tip => {
     })
 })
 
-
+const inputs = document.querySelectorAll('input')
+inputs.forEach(input => {
+    
+})
   
 // button reset
 const resetBtn = document.querySelector('button[type="reset"]')
