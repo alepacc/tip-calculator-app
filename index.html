@@ -12,31 +12,48 @@
 </head>
 <body>
   <section class="container">
-    <h1>SPLI<br>TTER</h1>
+    <div class="header">
+      <!-- <h1 class="title">SPLI<br>TTER</h1> -->
+      <img src="assets/images/logo.svg" alt="logo" height="30%">
+    </div>
     <main class="card">
-      
+      <div class="input-section">
+        <label for="bill">Bill</label>
+        <input id="bill" type="number" class="bill" placeholder="0.00">
+        <label>Select Tip %</label>
+        <div class="grid">
+          <div class="tip">5%</div>
+          <div class="tip">10%</div>
+          <div class="tip">15%</div>
+          <div class="tip">25%</div>
+          <div class="tip">50%</div>
+          <div class="tip--custom" >
+            <input type="number" placeholder="Custom">
+          </div>
+        </div>
+
+        <span class="label_numpeop">
+          <label for="num_people" id="label_people">Number of People</label>
+          <p id="error">Can't be zero</p>
+        </span>
+        <input type="number" id="num_people" class="num_people">
+      </div>
+      <div class="result">
+        <span>
+          <h2>Tip Amount</h2>
+          <h3>/ person</h3>
+        </span>
+        <span class="result-tip">$0.00</span>
+        <span>
+          <h2>Total</h2>
+          <h3>/ person</h3>
+        </span>
+        <span class="result-total">$0.00</span>
+        <button type="reset" aria-label="Reset">Reset</button>
+      </div>
     </main>
   </section>
-  Bill
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-
+  <script src="assets/js/main.js" type="module" ></script>
 </body>
 </html>

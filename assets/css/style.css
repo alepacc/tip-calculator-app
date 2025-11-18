@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
 * {
   padding: 0;
-  border: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -9,4 +9,147 @@ body {
   font-size: 24px;
   font-family: "Space Mono";
   font-weight: 700;
+  color: hsl(183, 100%, 15%);
+}
+
+h2 {
+  font-size: 14px;
+  color: hsl(0, 100%, 100%);
+}
+
+h3 {
+  color: hsl(184, 14%, 56%);
+  font-size: small;
+}
+
+.container {
+  background-color: hsl(185, 41%, 84%);
+}
+
+.card {
+  background-color: hsl(0, 100%, 100%);
+  border-radius: 20px 20px 0 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 100%;
+}
+
+.header {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: hsl(183, 100%, 15%);
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 5px;
+  line-height: 1.5;
+}
+
+input {
+  width: 100%;
+  color: hsl(183, 100%, 15%);
+  border: none;
+  background-color: hsl(189, 47%, 97%);
+  height: 40px;
+  border-radius: 5px;
+  font-family: "Space Mono";
+  font-size: large;
+  text-align: right;
+  padding: 15px;
+  cursor: pointer;
+}
+input:focus {
+  outline-color: hsl(172, 67%, 45%);
+}
+
+.bill {
+  background-image: url("../images/icon-dollar.svg");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+}
+
+#num_people {
+  background-image: url("../images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
+
+.result {
+  background-color: hsl(183, 100%, 15%);
+  padding: 20px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-areas: "span span";
+  gap: 20px;
+}
+
+label {
+  font-size: small;
+  color: hsl(186, 14%, 43%);
+}
+
+.grid {
+  display: grid;
+  grid-template: "tip tip";
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+
+.tip {
+  width: 100%;
+  background-color: azure;
+  /* border: none; */
+  border-radius: 5px;
+  gap: 20px;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 100%, 100%);
+  height: 40px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: hsl(172, 67%, 45%);
+}
+
+.tip--custom {
+  height: 40px;
+  cursor: pointer;
+}
+
+.result-total, .result-tip {
+  text-align: right;
+  color: hsl(172, 67%, 45%);
+}
+
+button {
+  grid-column-end: span 2;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: "Space Mono";
+  border: none;
+  background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#error {
+  font-size: small;
+  color: orange;
+  display: none;
+}
+
+.label_numpeop {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
