@@ -187,14 +187,22 @@ button {
         height: max-content;
         border-radius: 20px;
         width: fit-content;
+        padding: 30px;
+        box-shadow: 10px 20px 20px 10px rgba(0, 0, 0, 0.1);
     }
 
     .result {
         width: 100%;
+        padding: 30px;
     }
 
     .grid {
         grid-template-columns: repeat(3, 100px);
+        margin-bottom: 20px;
+    }
+
+    input{
+        margin-bottom: 20px;
     }
 
     img {
