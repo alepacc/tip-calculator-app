@@ -114,9 +114,14 @@ label {
   height: 40px;
   cursor: pointer;
 }
+.tip:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
 
 .selected {
   background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
 }
 
 .tip--custom {
@@ -140,6 +145,10 @@ button {
   color: hsl(183, 100%, 15%);
   text-transform: uppercase;
   cursor: pointer;
+}
+button:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
 }
 
 #error {

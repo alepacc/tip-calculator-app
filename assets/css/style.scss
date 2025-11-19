@@ -131,10 +131,15 @@ label{
     color: $white;
     height: 40px;
     cursor: pointer;
+    &:hover{
+        background-color: $grey-200;
+        color: $green-900;
+    }
 }
 
 .selected{
     background-color: $green-400;
+    color: $green-900;
 }
 
 .tip--custom{
@@ -158,6 +163,10 @@ button {
     color: $green-900;
     text-transform: uppercase;
     cursor: pointer;
+    &:hover{
+        background-color: $grey-200;
+        color: $green-900;
+    }
 }
 
 #error {

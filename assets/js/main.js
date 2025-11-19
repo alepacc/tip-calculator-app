@@ -12,7 +12,7 @@ const resetBtn = document.querySelector('button[type="reset"]')
 function validatePeople(){
     const peopleValue = peopleInput.value
 
-    if (!peopleValue || peopleValue === '0'){
+    if (peopleValue === '0'){
         errorMsg.style.display = "block"
         peopleInput.style.border = "1px solid orange"
         tipRes.innerText = "$0.00"
@@ -28,17 +28,9 @@ function split(percentage){
     const billValue = billInput.value
     const peopleValue = peopleInput.value
 
-    // if (!peopleValue || peopleValue === '0'){
-    //     errorMsg.style.display = "block"
-    //     peopleInput.style.border = "1px solid orange"
-    //     return
-    // }
-    // else{
-    //     errorMsg.style.display = "none"
-    //     peopleInput.style.border = ""
-    // }
     validatePeople()
 
+    if (!peopleValue) return
 
     if (!bill || !percentage || peopleValue === "0" || !peopleValue) {
         tipRes.innerText = "$0.00"
@@ -70,8 +62,6 @@ function getPercentage(){
 
     return null
 }
-
-
 
 // ––––– EVENTS –––––––
 tips.forEach(tip =>
