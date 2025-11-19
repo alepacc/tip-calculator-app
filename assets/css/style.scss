@@ -40,6 +40,7 @@ h3{
 
 .container{
     background-color: $grey-200;
+    height: 100dvh;
 }
 
 .card{
@@ -170,4 +171,33 @@ button {
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+}
+
+
+@media (min-width: 768px) {
+
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        flex-direction: row;
+        height: max-content;
+        border-radius: 20px;
+        width: fit-content;
+    }
+
+    .result {
+        width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 100px);
+    }
+
+    img {
+        height: auto;
+    }
 }
