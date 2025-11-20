@@ -175,6 +175,11 @@ button {
         background-color: $grey-200;
         color: $green-900;
     }
+    &:disabled{
+        cursor: auto;
+        background: hsl(183, 100%, 20%);
+        filter: blur(1px);
+    }
 }
 
 #error {
@@ -198,6 +203,8 @@ button {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 10%;
+
     }
     .card {
         flex-direction: row;
@@ -229,4 +236,5 @@ button {
     img {
         height: auto;
     }
+
 }

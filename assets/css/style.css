@@ -156,6 +156,11 @@ button:hover {
   background-color: hsl(185, 41%, 84%);
   color: hsl(183, 100%, 15%);
 }
+button:disabled {
+  cursor: auto;
+  background: hsl(183, 100%, 20%);
+  filter: blur(1px);
+}
 
 #error {
   font-size: small;
@@ -176,6 +181,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 10%;
   }
   .card {
     flex-direction: row;

@@ -45,6 +45,8 @@ function split(percentage){
 
     tipRes.innerText = `$${tipAmount}`
     totalRes.innerText = `$${tot}`
+
+    resetBtn.disable = false
 }
 
 function rmSecetedTip(){
@@ -81,6 +83,8 @@ const inputs = document.querySelectorAll('input')
 inputs.forEach(input => {
     input.addEventListener('change', e => {
         e.preventDefault()
+
+        resetBtn.disabled = input.value.trim() === ""
 
         if(customTip.value !== ''){
             rmSecetedTip()
