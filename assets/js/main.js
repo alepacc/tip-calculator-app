@@ -24,7 +24,7 @@ function validatePeople(){
     }
 }
 
-function split(percentage){
+function calculate(percentage){
     const billValue = billInput.value
     const peopleValue = peopleInput.value
 
@@ -75,7 +75,7 @@ tips.forEach(tip =>
         // validatePeople()
 
         let percent = getPercentage()
-        split(percent)
+        calculate(percent)
     })
 )
 
@@ -92,7 +92,7 @@ inputs.forEach(input => {
             
         if(input.value != '' && peopleInput.value !== '0'){
             let percent = getPercentage()
-            if (percent) split(percent)
+            if (percent) calculate(percent)
 
         }else {
             validatePeople()
