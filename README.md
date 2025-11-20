@@ -25,9 +25,10 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Calculate the correct tip and total cost of the bill per person
 
-### Screenshot
+### Screenshot solution
 
 ![desktop version](assets/images/Screenshot%202025-11-20%20alle%2016.02.45.png)
+
 ![mobile version](assets/images/Screenshot%202025-11-20%20alle%2016.03.19.png)
 
 
