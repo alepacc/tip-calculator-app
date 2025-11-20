@@ -103,8 +103,7 @@ input{
     padding: 20px;
     border-radius: 20px;
     display: grid;
-    grid-template-areas: "span span";
-    gap: 20px;
+    row-gap: 20px;
 }
 
 label{
@@ -130,6 +129,9 @@ label{
     background-color: $green-900;
     color: $white;
     height: 40px;
+    font-size: 20px;
+    align-content: center;
+
     cursor: pointer;
     &:hover{
         background-color: $grey-200;
@@ -150,6 +152,12 @@ label{
 .result-total, .result-tip {
     text-align: right;
     color: $green-400;
+    font-size: clamp(24px, 3vw, 40px);
+}
+
+
+span {
+    align-self: center;
 }
 
 button {
@@ -203,6 +211,10 @@ button {
     .result {
         width: 100%;
         padding: 30px;
+        align-items: end;
+        align-content: center;
+        grid-template-rows: auto auto 1fr auto;
+        row-gap: 0;
     }
 
     .grid {

@@ -86,8 +86,7 @@ input:focus {
   padding: 20px;
   border-radius: 20px;
   display: grid;
-  grid-template-areas: "span span";
-  gap: 20px;
+  row-gap: 20px;
 }
 
 label {
@@ -112,6 +111,8 @@ label {
   background-color: hsl(183, 100%, 15%);
   color: hsl(0, 100%, 100%);
   height: 40px;
+  font-size: 20px;
+  align-content: center;
   cursor: pointer;
 }
 .tip:hover {
@@ -132,6 +133,11 @@ label {
 .result-total, .result-tip {
   text-align: right;
   color: hsl(172, 67%, 45%);
+  font-size: clamp(24px, 3vw, 40px);
+}
+
+span {
+  align-self: center;
 }
 
 button {
@@ -184,6 +190,10 @@ button:hover {
   .result {
     width: 100%;
     padding: 30px;
+    align-items: end;
+    align-content: center;
+    grid-template-rows: auto auto 1fr auto;
+    row-gap: 0;
   }
   .grid {
     grid-template-columns: repeat(3, 100px);
